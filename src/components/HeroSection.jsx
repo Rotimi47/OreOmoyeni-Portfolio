@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import desktopBg from "../assets/desktopBg.jpg";
-import mobileTwo from "../assets/mobile6.jpg";
+import mobileBg from "../assets/mobileBg.jpg";
 import { motion } from 'framer-motion';
 
 
@@ -30,7 +30,7 @@ const HeroSection = () => {
         className="bg-cover bg-center w-full h-auto min-h-screen 
                   "
         style={{ 
-            backgroundImage: `url(${isDesktop ? desktopBg : mobileTwo })`,
+            backgroundImage: `url(${isDesktop ? desktopBg : mobileBg })`,
        }}
       >
   

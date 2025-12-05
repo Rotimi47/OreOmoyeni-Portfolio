@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import mobileTwo from "../assets/mobileK.jpg";
-import desktopTwo from '../assets/desktopY.jpg';
+import mobileK from "../assets/mobileK.jpg";
+import desktopY from '../assets/desktopY.jpg';
 import {Link} from 'react-router-dom';
-import projectPic from '../assets/projectPicx.jpg';
+import projectPicx from '../assets/projectPicx.jpg';
 import {motion} from 'framer-motion';
 
 const SectionTwo = () => {
@@ -28,14 +28,14 @@ const SectionTwo = () => {
              <div className="bg-cover bg-center w-full min-h-screen 
                                   md:bg-[url('${desktopBg}')]"
                         style={{ 
-                            backgroundImage: `url(${isDesktop ? desktopTwo : mobileTwo })`,
+                            backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
                        }}
                       >
                         
                     <div className=' py-10'>
                         <div className=' w-99 my-6 gap-12 flex flex-col lg:flex-row lg:w-250 mx-auto lg:mt-6 lg:py-4  xl:mt-12 xl:py-12 xl:w-259  lg:px-2  lg:justify-between'> 
                             <div className='w-full lg:w-120'>
-                                <img className=''  src={projectPic} alt="project image logo " />
+                                <img className=''  src={projectPicx} alt="project image logo " />
                             </div>
 
                              <div className='lg:w-100 flex flex-col gap-3'>

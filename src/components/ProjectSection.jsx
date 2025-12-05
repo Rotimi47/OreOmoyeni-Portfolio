@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import mobileTwo from "../assets/mobileK.jpg";
-import desktopTwo from '../assets/desktopY.jpg';
+import mobileK from "../assets/mobileK.jpg";
+import desktopY from '../assets/desktopY.jpg';
 import {Link} from 'react-router-dom';
 import projectPic from '../assets/projectPic.jpg';
 import {motion} from 'framer-motion';
@@ -30,7 +30,7 @@ const ProjectSection = () => {
         <div  className="bg-cover bg-center w-full min-h-screen 
                           md:bg-[url('${desktopBg}')]"
                 style={{ 
-                    backgroundImage: `url(${isDesktop ? desktopTwo : mobileTwo })`,
+                    backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
                }}
               >
                 
