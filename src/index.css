@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+:root {
+    font-family: "Orbitron", sans-serif;
+     color-scheme: dark;
+ 
+     .exo {
+        font-family: "Exo", sans-serif;
+    }
+}
+body{
+    overflow-x: hidden
+}
+
