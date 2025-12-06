@@ -26,7 +26,7 @@ const SectionTwo = () => {
 
     return (
              <div className="bg-cover bg-center w-full min-h-screen 
-                                  md:bg-[url('${desktopBg}')]"
+                                 "
                         style={{ 
                             backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
                        }}

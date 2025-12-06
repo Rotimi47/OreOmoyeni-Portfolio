@@ -5,11 +5,12 @@
 :root {
     font-family: "Orbitron", sans-serif;
      color-scheme: dark;
- 
-     .exo {
-        font-family: "Exo", sans-serif;
-    }
+
 }
+.exo {
+        font-family: "Exo", sans-serif;
+}
+
 body{
     overflow-x: hidden
 }

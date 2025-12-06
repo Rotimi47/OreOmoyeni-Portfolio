@@ -28,7 +28,7 @@ const ProjectSection = () => {
 
     return (
         <div  className="bg-cover bg-center w-full min-h-screen 
-                          md:bg-[url('${desktopBg}')]"
+                          "
                 style={{ 
                     backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
                }}
@@ -60,9 +60,15 @@ const ProjectSection = () => {
                             </motion.button>
                         </Link>
                     </div>
-                    <div className='w-full lg:w-100'>
-                        <img className=''  src={projectPic} alt="project image logo " />
+                    <div className="w-full lg:w-100">
+                        <img 
+                            src={projectPic} 
+                            alt="project image logo"
+                            className="w-full max-w-full h-auto object-contain"
+                        />
                     </div>
+
+                    
 
                 </div>
 

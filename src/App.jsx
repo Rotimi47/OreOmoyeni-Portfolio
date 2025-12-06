@@ -41,12 +41,12 @@ const App = () => {
       </div>
 
       {/* Section Two */}
-      <div data-aos="fade-right" data-aos-delay="300">
+      <div data-aos="fade-up" data-aos-delay="300">
         <SectionTwo />
       </div>
 
       {/* Section Three */}
-      <div data-aos="fade-left" data-aos-delay="400">
+      <div data-aos="fade-up" data-aos-delay="400">
         <SectionThree />
       </div>
 
