@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import mobileK from "../assets/mobileK.jpg";
 import desktopY from '../assets/desktopY.jpg';
-import home from '../assets/Homex.png'
+import home from '../assets/homex.png'
 import {motion} from 'framer-motion';
 
 
