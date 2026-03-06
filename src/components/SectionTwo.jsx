@@ -2,8 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import mobileK from "../assets/mobileK.jpg";
 import desktopY from '../assets/desktopY.jpg';
-import {Link} from 'react-router-dom';
-import projectPicx from '../assets/projectPicx.jpg';
+import estatein from '../assets/Estatein.png'
 import {motion} from 'framer-motion';
 
 const SectionTwo = () => {
@@ -25,45 +24,47 @@ const SectionTwo = () => {
 
 
     return (
-             <div className="bg-cover bg-center w-full min-h-screen 
-                                 "
-                        style={{ 
-                            backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
-                       }}
-                      >
+        <div className="bg-cover bg-center w-full min-h-screen bg-no-repeat"
+            style={{ 
+                backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
+            }}
+        >
                         
-                    <div className=' py-10'>
-                        <div className=' w-99 my-6 gap-12 flex flex-col lg:flex-row lg:w-250 mx-auto lg:mt-6 lg:py-4  xl:mt-12 xl:py-12 xl:w-259  lg:px-2  lg:justify-between'> 
-                            <div className='w-full lg:w-120'>
-                                <img className=''  src={projectPicx} alt="project image logo " />
-                            </div>
-
-                             <div className='lg:w-100 flex flex-col gap-3'>
-                                <h1 className='font-bold lg:text-3xl'>OK Music Group</h1>
-                                <p className='exo text-base border-b border-white leading-[125%] tracking-[0.0125em] py-2.5'>I built a modern music record company website using React and Framer Motion, designed to give fans a smooth and immersive experience while exploring their favorite artistes. The platform allows users to easily stay updated on new releases, upcoming tours, music drops, and artiste profiles, all presented in a clean, dynamic interface.The website features fluid animations, responsive layouts, and interactive UI elements that make navigation feel intuitive and engaging. </p>
-                                <ul className='exo '>
-                                    <li className=''>Platform: Web</li>
-                                    <li>Industry: Entertainment, Music</li>
-                                    <li>Produced: No</li>
-                                    <li>Role: Frontend Developer</li>
-                                    <li>Tools: ReactJs, Javascript, Framer Motion</li>
-                                </ul>
-                                <Link to=''>
-                                    <motion.button 
-                                        className='bg-white text-black px-10 py-4 rounded-4xl cursor-pointer'
-                                        whileHover={{ 
-                                            scale:1.1,
-                                            }} 
-                                        >
-                                        View project
-                                    </motion.button>
-                                </Link>
-                            </div>
-        
-                        </div>
-        
-                    </div>
+                   
+            <div className='w-full py-10 px-4 lg:py-20 lg:px-20 2xl:max-w-380 2xl:mx-auto 4xl:max-w-7xl 4xl:mx-auto flex flex-col gap-10 lg:flex-row '> 
+                <div className=''>
+                    <img className='w-full max-w-full h-auto object-contain lg:w-150 rounded-md'  
+                    src={estatein} 
+                    alt="project image logo " />
                 </div>
+
+                                                         
+                <div className='flex flex-col gap-3 lg:w-150'>
+                    <h1 className='font-semibold lg:text-3xl'>Estatein</h1>
+                    <p className='exo text-base border-b border-white leading-[125%] tracking-[0.0125em] py-2.5'>This web application simplifies the process of booking apartments online. Although it is currently a mockup, it demonstrates a seamless and stress-free booking experience for both clients and service providers. The platform prioritizes data security by leveraging Firebase Authentication to protect user information such as emails and passwords, while Firestore is used for efficient data storage and retrieval, allowing users to browse through available properties with ease. I built this using Node.js for backend development, with Framer Motion and AOS enhancing the user experience through smooth animations and engaging scroll effects. </p>
+                    <ul className='exo text-base font-light list-disc ml-5'>
+                        <li>Platform: Web (app)</li>
+                        <li>Industry: Real Estate, Commerce</li>
+                        <li>Produced: Yes</li>
+                        <li>Role: Frontend Developer</li>
+                        <li>Tools: ReactJs(NodeJs), Tailwind CSS, Javascript, Firebase, AOS</li>
+                    </ul>
+                    <a href='https://estatein-web-appx.vercel.app/' target="_blank" rel="noopener noreferrer">
+                        <motion.button 
+                            className='bg-white text-black px-10 py-4 rounded-4xl cursor-pointer'
+                            whileHover={{ 
+                                scale:1.1,
+                            }} 
+                            >
+                                View project
+                        </motion.button>
+                    </a>
+                </div>
+        
+            </div>
+        
+                    
+        </div>
     )
 
 

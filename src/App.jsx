@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     
-    <div>
+    <>
 
        {/* Hero Section */}
    
@@ -56,7 +56,7 @@ const App = () => {
 
 
 
-    </div>
+    </>
   )
 }
 

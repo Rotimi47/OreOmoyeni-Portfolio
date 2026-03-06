@@ -2,8 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import mobileK from "../assets/mobileK.jpg";
 import desktopY from '../assets/desktopY.jpg';
-import {Link} from 'react-router-dom';
-import projectPic from '../assets/projectPic.jpg';
+import home from '../assets/Homex.png'
 import {motion} from 'framer-motion';
 
 
@@ -27,44 +26,43 @@ const ProjectSection = () => {
    
 
     return (
-        <div  className="bg-cover bg-center w-full min-h-screen 
-                          "
+        <div  className="bg-cover bg-center w-full min-h-screen bg-no-repeat"
                 style={{ 
                     backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
                }}
               >
                 
-            <div className=' py-10'>
+            <div className=' w-full py-10 px-4 lg:py-20 lg:px-20 2xl:max-w-380 2xl:mx-auto 4xl:max-w-7xl 4xl:mx-auto flex flex-col gap-10 lg:gap-14  '>
                 <div className='text-center'>
                     <h3 className='font-medium text-2xl md:text-lg'>Featured Projects</h3>
                 </div>
-                <div className=' w-99 flex-col gap-12 my-6 flex lg:flex-row lg:w-250 mx-auto lg:mt-6 lg:py-4  xl:mt-12 xl:py-12 xl:w-259  lg:px-2  lg:justify-between'>
-                    <div className=' lg:w-100 flex flex-col gap-3'>
-                        <h1 className='font-bold lg:text-3xl'>OK Music Group</h1>
-                        <p className='exo text-base border-b border-white leading-[125%] tracking-[0.0125em] py-2.5'>I built a modern music record company website using React and Framer Motion, designed to give fans a smooth and immersive experience while exploring their favorite artistes. The platform allows users to easily stay updated on new releases, upcoming tours, music drops, and artiste profiles, all presented in a clean, dynamic interface.The website features fluid animations, responsive layouts, and interactive UI elements that make navigation feel intuitive and engaging. </p>
-                        <ul className='exo '>
-                            <li className=''>Platform: Web</li>
-                            <li>Industry: Entertainment, Music</li>
-                            <li>Produced: No</li>
+                <div className=' flex  flex-col gap-10 lg:flex-row lg:justify-center lg:gap-14 lg:items-center'>
+                    <div className='flex flex-col gap-3 lg:w-150'>
+                        <h1 className='font-semibold lg:text-3xl'>Paenote - Global Payment for Global Businesses</h1>
+                        <p className='exo text-base border-b border-white leading-[125%] tracking-[0.0125em] py-2.5'>This is a simple modern web platform designed to share the company’s modus operandi and serve as a medium to familiarize users and clients with it’s services. It combines simplicity with functionality to give users a smooth and interactive experience. </p>
+                        <ul className='exo text-base font-light list-disc ml-5 '>
+                            <li>Platform: Web</li>
+                            <li>Industry: Fintech, Business</li>
+                            <li>Produced: yes</li>
                             <li>Role: Frontend Developer</li>
-                            <li>Tools: ReactJs, Javascript, Framer Motion</li>
+                            <li>Tools: ReactJs, Javascript</li>
                         </ul>
-                        <Link to=''>
+                        <a href='https://paenote.com/' target="_blank" rel="noopener noreferrer">
                             <motion.button 
-                                className='bg-white text-black px-10 py-4 rounded-4xl cursor-pointer'
+                                className='bg-white text-black px-10 py-4 rounded-4xl cursor-pointer mt-2.5'
                                 whileHover={{ 
                                     scale:1.1,
                                     }} 
                                 >
                                 View project
                             </motion.button>
-                        </Link>
+                        </a>
                     </div>
-                    <div className="w-full lg:w-100">
+                    <div className="">
                         <img 
-                            src={projectPic} 
+                            src={home} 
                             alt="project image logo"
-                            className="w-full max-w-full h-auto object-contain"
+                            className="w-full max-w-full h-auto object-contain lg:w-150"
                         />
                     </div>
 
