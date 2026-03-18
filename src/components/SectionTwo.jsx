@@ -31,7 +31,7 @@ const SectionTwo = () => {
         >
                         
                    
-            <div className='w-full py-10 px-4 lg:py-20 lg:px-20 2xl:max-w-380 2xl:mx-auto 4xl:max-w-7xl 4xl:mx-auto flex flex-col gap-10 lg:flex-row '> 
+            <div className='w-full py-10 px-4 lg:py-20 lg:px-20 max-w-[1400px] mx-auto flex flex-col gap-10 lg:flex-row '> 
                 <div className=''>
                     <img className='w-full max-w-full h-auto object-contain lg:w-150 rounded-md'  
                     src={estatein} 

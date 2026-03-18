@@ -32,7 +32,7 @@ const ProjectSection = () => {
                }}
               >
                 
-            <div className=' w-full py-10 px-4 lg:py-20 lg:px-20 2xl:max-w-380 2xl:mx-auto 4xl:max-w-7xl 4xl:mx-auto flex flex-col gap-10 lg:gap-14  '>
+            <div className=' w-full max-w-[1400px] mx-auto py-10 px-4 lg:py-20 lg:px-20 flex flex-col gap-10 lg:gap-14  '>
                 <div className='text-center'>
                     <h3 className='font-medium text-2xl md:text-lg'>Featured Projects</h3>
                 </div>

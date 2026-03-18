@@ -62,7 +62,7 @@ const HeroSection = () => {
             </p>
           </div>
           <div className='flex flex-col items-center gap-4 md:flex-row '>
-            <a href="">
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
               <motion.button 
                className='bg-white text-black px-10 py-5 cursor-pointer rounded-4xl'
                 whileHover={{ 
