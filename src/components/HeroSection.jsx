@@ -73,7 +73,7 @@ const HeroSection = () => {
                 View Resume
               </motion.button>
             </a>
-            <a href="https://x.com/oreomoyeni" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/oluwadurotimi-omoyeni-4254a71b9/" target="_blank" rel="noopener noreferrer">
               <motion.button
                 className='bg-black px-10 py-5 rounded-4xl cursor-pointer'
                 whileHover={{ 
