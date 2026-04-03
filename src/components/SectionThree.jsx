@@ -8,25 +8,32 @@ import Wheelz from "../assets/Wheelz.png"
 
 
 const SectionThree = () => {
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+       const [width, setWidth] = useState(0);
+    
     
        useEffect(() => {
         const handleResize = () => {
-          setIsDesktop(window.innerWidth >= 768);
+          setWidth(window.innerWidth);
         };
-    
+         handleResize();
         window.addEventListener("resize", handleResize);
     
-        // Clean up listener on unmount
+        
         return () => window.removeEventListener("resize", handleResize);
       }, []);
+    
+      const getBackground = () => {
+        if (width >= 1640) return "none"; // remove background on large screens
+        if (width >= 768) return `url(${desktopY})`; // desktop
+        return `url(${mobileK})`; // mobile
+      };
 
    
 
     return (
         <div  className="bg-cover bg-center w-full min-h-screen bg-no-repeat"
                 style={{ 
-                    backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
+                    backgroundImage: getBackground() ,
                }}
               >
                 

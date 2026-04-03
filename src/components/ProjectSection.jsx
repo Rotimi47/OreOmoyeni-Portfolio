@@ -7,28 +7,32 @@ import {motion} from 'framer-motion';
 
 
 
-
-
 const ProjectSection = () => {
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
-    
-       useEffect(() => {
-        const handleResize = () => {
-          setIsDesktop(window.innerWidth >= 768);
-        };
-    
-        window.addEventListener("resize", handleResize);
-    
-        // Clean up listener on unmount
-        return () => window.removeEventListener("resize", handleResize);
-      }, []);
-
+     const [width, setWidth] = useState(0);
+  
+  
+     useEffect(() => {
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+      };
+       handleResize();
+      window.addEventListener("resize", handleResize);
+  
+      
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+  
+    const getBackground = () => {
+      if (width >= 1640) return "none"; // remove background on large screens
+      if (width >= 768) return `url(${desktopY})`; // desktop
+      return `url(${mobileK})`; // mobile
+    };
    
 
     return (
         <div  className="bg-cover bg-center w-full min-h-screen bg-no-repeat"
                 style={{ 
-                    backgroundImage: `url(${isDesktop ? desktopY : mobileK })`,
+                     backgroundImage: getBackground() 
                }}
               >
                 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import desktopBg from "../assets/desktopBg.jpg";
@@ -7,29 +6,33 @@ import { motion } from 'framer-motion';
 
 
 
-
-
-
 const HeroSection = () => {
   
-   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+   const [width, setWidth] = useState(0);
+
 
    useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
+      setWidth(window.innerWidth);
     };
-
+     handleResize();
     window.addEventListener("resize", handleResize);
 
-    // Clean up listener on unmount
+    
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const getBackground = () => {
+    if (width >= 1640) return "none"; // remove background on large screens
+    if (width >= 768) return `url(${desktopBg})`; // desktop
+    return `url(${mobileBg})`; // mobile
+  };
+
   return (
     <div
-        className="bg-cover bg-center w-full min-h-screen bg-no-repeat"
+        className="bg-cover bg-center w-full min-h-screen bg-no-repeat 2xl:max-w-380 2xl:mx-auto"
         style={{ 
-             backgroundImage: `url(${isDesktop ? desktopBg : mobileBg })`,
+              backgroundImage: getBackground() 
        }}
       >
   
